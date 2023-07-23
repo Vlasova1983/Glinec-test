@@ -30,6 +30,8 @@ body {
 }
 
 
+
+
 ul,li {
     list-style: none;
     padding: 0;
@@ -59,6 +61,13 @@ button {
     margin-right: auto;
     padding-left: 75px;
     padding-right: 75px;   
+}
+
+@media screen and (min-width: 370px) and (max-width:767px) {
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .title_none{
@@ -156,26 +165,24 @@ button {
     width: 100%;    
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     
     .logo_text{
         display: none;
     }
     .site_nav {
         width: 100vw;
-        font-weight: 600;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: 12px;
     }
     .contact_telephone {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 16px;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
     }
     .contact_box {
         width: 100vw;
-    }
-
-    
+    }    
 }
 
 /* -----------section hero--------------------- */
@@ -418,7 +425,7 @@ button{
     color: black;
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .ball,.circle_smoll, .circle ,.picture_conteiner,.button_pixel{
         display: none;
     }
@@ -478,7 +485,7 @@ button{
 }
 
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .examination{
         display: none;
     }
@@ -786,7 +793,7 @@ button{
 /* END Keyframes for the initial animation */
 
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .about {
         display: none;
     }
@@ -825,7 +832,7 @@ button{
     height: 100%;
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .foto {
         display: none;
     }
@@ -1025,7 +1032,7 @@ h3 {
     right: 60px;
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .arrow_left1,.arrow_right1 {
         display: none;
     }
@@ -1143,7 +1150,7 @@ h3 {
     background-image: linear-gradient(-45deg, rgba(255, 223, 0, 1) 0%, rgba(255, 184, 0, 1) 100%)
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:767px) {
     .gratitude {
         display: none;
     }
@@ -1219,8 +1226,8 @@ h3 {
 
 }
 
-@media screen and (min-width: 380px) and (max-width:767px) {
-    .footer_part1 {
+@media screen and (min-width: 370px) and (max-width:767px) {
+    .footer_part1,.startaps {
         display: none;
     }
     .footer {        
@@ -1243,7 +1250,8 @@ h3 {
         line-height: 14px;
     }
     .adress{
-        margin: 0 60px;
+        margin-left:40px;
+        margin-right: 0;
     }
     .telephone{
         margin-right: 0;
