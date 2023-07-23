@@ -55,6 +55,10 @@ button {
     padding-right: 75px;   
 }
 
+.title_none{
+    display: none;
+}
+
 /* header */
 .header{   
     margin-bottom: 100px;
