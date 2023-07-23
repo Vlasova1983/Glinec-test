@@ -983,18 +983,24 @@ h3 {
     position: absolute;
     left: 100px;
     top: -160px;
+    width:518px;
+    height:352px;
 }
 
 .bitmap2 {
     position: absolute;
     left: -260px;
     top:-100px;
-
+    width: 413px;
+    height: 347px;
 }
+
 .bitmap3 {
     position: absolute;
     left: 140px;
     top: 10px;
+    width: 375px;
+    height: 280px;
 }
 
 .container_fluid{
