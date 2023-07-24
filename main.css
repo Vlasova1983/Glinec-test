@@ -98,6 +98,9 @@ button {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .fon1,.fon2,.fon3{
+        display: none;
+    }
 }
 
 
@@ -872,7 +875,12 @@ h3 {
         transform: scale(2.15);
     }
 }
-
+@media screen and (min-width: 370px) and (max-width:1024px) {
+    .container_cart {
+        flex-wrap: wrap;
+    }
+    
+}
 
 /* ------section worked------------ */
 
@@ -900,6 +908,7 @@ h3 {
 }
 .list_item{
     flex-grow: 1;
+    text-align: center;
 }
 
 .card {
