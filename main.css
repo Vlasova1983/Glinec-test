@@ -492,15 +492,19 @@ button{
 }
 
 .examination_flex{
-    display: flex;    
-    margin-top: 50px;
-    align-items: center;  
+    display: flex;
+    align-items: center;    
+    margin-top: 50px;      
+}
+
+.flex_item{
+    flex-grow: 1;
 }
 
 .examination_img{
-    max-height:464px;
-
+    max-height:464px;    
 }
+
 .examination_text{
     margin-left: 50px;  
     max-height: 390px; 
@@ -737,8 +741,7 @@ button{
 }
 
 .container_cart {   
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
     gap: 30px;
     align-items: center;
     justify-content: center;
