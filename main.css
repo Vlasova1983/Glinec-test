@@ -15,7 +15,9 @@
 html {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;    
+    overflow-x: hidden;
+    position: relative; 
+    z-index:999;   
 }
 
 body {
@@ -40,7 +42,7 @@ ul,li {
 
 h1,
 h2,
-h3 {
+h3,p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -63,16 +65,42 @@ button {
     padding-right: 75px;   
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+.title_none{
+    display: none;
+}
+
+.fon1{
+    z-index: 1;
+    position: absolute;
+    top:20%;
+    left:0;   
+}
+
+
+.fon2 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+   
+}
+
+.fon3 {
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    right: 0;   
+}
+
+
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .container{
         padding-left: 15px;
         padding-right: 15px;
     }
 }
 
-.title_none{
-    display: none;
-}
+
 
 /* header */
 .header{  
@@ -165,7 +193,7 @@ button {
     width: 100%;    
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     
     .logo_text{
         display: none;
@@ -191,7 +219,7 @@ button {
     margin-bottom: 100px;
     position: relative;
     color: black;
-    text-align: center;
+    text-align: center;   
 }
 
 .hero_flex{
@@ -238,6 +266,7 @@ button {
 }
 
 .title_conteiner{
+    z-index: 2;
    width: 50%; 
    text-align: left;
 }
@@ -349,6 +378,7 @@ button{
       background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
 
 .stage {
+    z-index: 1;
   width: 300px;
   height: 300px;
   display: inline-block;
@@ -416,8 +446,6 @@ button{
     transform: scale(1); } 
 }
 
-
-
 .more{
     font-weight: 700;
     font-size: 14px;
@@ -425,7 +453,7 @@ button{
     color: black;
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .ball,.circle_smoll, .circle ,.picture_conteiner,.button_pixel{
         display: none;
     }
@@ -469,7 +497,10 @@ button{
     align-items: center;  
 }
 
+.examination_img{
+    max-height:464px;
 
+}
 .examination_text{
     margin-left: 50px;  
     max-height: 390px; 
@@ -485,7 +516,7 @@ button{
 }
 
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .examination{
         display: none;
     }
@@ -536,36 +567,14 @@ button{
     position: relative;
 }
 .about_picture{
-    position: relative;
-    
-}
-
-.chart {
-    position: relative;
-    top:-500px;
-    left: -100px;
-    display: inline-block;
-    color: #999;
-    font-size: 20px;
-    text-align: center;
-}
-.circle.outer{
-    width: 370px;
-    height: 370px;
-}
-.chart figcaption {
-    padding: 50px 25px;
-    width: 370px;
-    height: 370px;
-    border: 20px solid #f0f0f0;
-    border-radius: 100px;
-    line-height: 50px;
+    position: relative;    
 }
 
 .about_title{
     font-weight: 700;
     line-height: 20px;
     font-size: 25px;
+    margin-bottom: 5px;
 }
 .about_text{
     font-weight: 400;
@@ -575,227 +584,96 @@ button{
 
 .about_bloc1{
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: left;
-    top:-20px;
-    right: 450px;
+    top:-3%;
+    left: 70%;
 }
+
 .about_bloc2 {  
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: left;
-    top: 110px;
-    right: 330px;
+    top:20%;
+    left: 75%;
 }
 .about_bloc3 {
     position: absolute;
-    max-width: 505px;
+    max-width:30%;
     text-align: left;
-    top: 260px;
-    right: 300px;
+    top: 40%;
+    left: 80%;
 }
 .about_bloc4 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: left;
-    top: 400px;
-    right: 330px;
+    top: 67%;
+    left: 75%;
 }
 .about_bloc5 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: left;
-    top: 550px;
-    right: 450px;
+    top: 90%;
+    left: 70%;
 }
 .about_bloc6 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: right;
-    top: -20px;
-    left: 450px;
+    top: -3%;
+    right: 70%;
 }
 .about_bloc7 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: right;
-    top: 110px;
-    left: 330px;
+    top: 20%;
+    right: 75%;
 }
 .about_bloc8 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: right;
-    top: 260px;
-    left: 300px;
+    top: 40%;
+    right: 80%;
 }
 .about_bloc9 {
     position: absolute;
-    max-width: 505px;
+    max-width:30%;
     text-align: right;
-    top: 400px;
-    left: 330px;
+    top: 67%;
+    right: 75%;
 }
 .about_bloc10 {
     position: absolute;
-    max-width: 505px;
+    max-width: 30%;
     text-align: right;
-    top: 550px;
-    left: 450px;
-}
-/* Colors for the circles and positions for the graphics */
-
-.css {
-    top: 55px;
-    left: 48px;
+    top: 90%;
+    right: 70%;
 }
 
-.css+svg .outer {
-    stroke:linear-gradient(#FFDF00, #FFB800);
-}
-
-
-
-.chart svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.outer {   
-    fill: transparent;
-    stroke: linear-gradient(#FFDF00, #FFB800);
-    stroke-width: 60;
-    stroke-dasharray: 534;
-    transition: stroke-dashoffset 1s;
-    -webkit-animation-play-state: running;
-
-    /* firefox bug fix - won't rotate at 90deg angles */
-    -moz-transform: rotate(-89deg) translateX(-190px);
-}
-
-.chart:hover .outer {
-    stroke-dashoffset: 534 !important;
-    -webkit-animation-play-state: paused;
-}
-
-/* END Circle colors and graphic positions */
-
-
-/* Set the initial values for the animation */
-.chart[data-percent='100'] .outer {
-    stroke-dashoffset: 0;
-    -webkit-animation: show100 2s;
-    animation: show100 2s;
-}
-
-.chart[data-percent='75'] .outer {
-    stroke-dashoffset: 133;
-    -webkit-animation: show75 2s;
-    animation: show75 2s;
-}
-
-.chart[data-percent='50'] .outer {
-    stroke-dashoffset: 267;
-    -webkit-animation: show50 2s;
-    animation: show50 2s;
-}
-
-.chart[data-percent='25'] .outer {
-    stroke-dashoffset: 401;
-    -webkit-animation: show25 2s;
-    animation: show25 2s;
-}
-
-/* END set initial animation values */
-
-/* Keyframes for the initial animation */
-@-webkit-keyframes show100 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes show100 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-webkit-keyframes show75 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 134;
-    }
-}
-
-@keyframes show75 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 124;
-    }
-}
-
-@-webkit-keyframes show50 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 267;
-    }
-}
-
-@keyframes show50 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 267;
-    }
-}
-
-@-webkit-keyframes show25 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 401;
-    }
-}
-
-@keyframes show25 {
-    from {
-        stroke-dashoffset: 537;
-    }
-
-    to {
-        stroke-dashoffset: 401;
-    }
-}
-
-/* END Keyframes for the initial animation */
-
-
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .about {
         display: none;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .about_title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 15px;
+        
+        margin-bottom: 5px;
+    }
+    
+    .about_text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        
     }
 }
 
@@ -816,6 +694,12 @@ button{
     padding: 0;   
 }
 
+
+
+.foto_item{
+    max-height:288px ;
+}
+
 .arrow_left{
     position: absolute;
     top:130px;
@@ -832,9 +716,15 @@ button{
     height: 100%;
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .foto {
         display: none;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .foto_list {    
+        justify-content: center;            
     }
 }
 
@@ -983,6 +873,12 @@ h3 {
     }
 }
 
+@media screen and (max-width:1440px) {
+    .container_cart {
+        justify-content: center;
+    }
+}
+
 /* ------section worked------------ */
 
 
@@ -1032,7 +928,7 @@ h3 {
     right: 60px;
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .arrow_left1,.arrow_right1 {
         display: none;
     }
@@ -1040,7 +936,11 @@ h3 {
         justify-content: center;
     }
 }
-
+@media screen and (max-width:1440px) {
+    .worked_list {
+        justify-content: center;
+    }
+}
 /* --------section gratitude----------- */
 
 .gratitude {    
@@ -1080,24 +980,24 @@ h3 {
     position: absolute;
     left: 100px;
     top: -160px;
-    width:518px;
-    height:352px;
+    /* max-width:518px; */
+    max-height:352px;
 }
 
 .bitmap2 {
     position: absolute;
     left: -260px;
     top:-100px;
-    width: 413px;
-    height: 347px;
+    /* width: 413px; */
+    max-height: 347px;
 }
 
 .bitmap3 {
     position: absolute;
     left: 140px;
     top: 10px;
-    width: 375px;
-    height: 280px;
+    /* width: 375px; */
+   max-height: 280px;
 }
 
 .container_fluid{
@@ -1150,18 +1050,22 @@ h3 {
     background-image: linear-gradient(-45deg, rgba(255, 223, 0, 1) 0%, rgba(255, 184, 0, 1) 100%)
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .gratitude {
         display: none;
     }
 }
-
+@media screen and (max-width:1440px) {
+    .gratitude_text {
+        margin-right: 0;
+    }
+}
 
 /* ---------footer */
 
 
 .footer{
-    display: flex;
+   
     background-image: url("/image/Footerfon.jpg");     
     font-weight: 700;
     font-size: 24px;
@@ -1172,10 +1076,11 @@ h3 {
 .footer_conteiner{
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 }
 
 .footer_part1{
-    max-width: 525px;
+    max-width: 35%;
     background: rgba(255, 223, 0, 1);
     padding: 40px 30px 55px 75px;
 }
@@ -1189,35 +1094,37 @@ h3 {
     margin-top: 70px;
 }
 
-.footer_part2{
-    display: flex;    
+.footer_part2{    
+    display: flex; 
+    justify-content: space-between;   
     padding: 50px 105px 155px 120px;
     color: white;
 }
 .telephone{
-    max-width: 257px;
-    text-align: left;
-    margin-right: 146px;
-    
+    width: 30%;    
+    text-align: left;    
+}
+.adress{
+    width: 30%;    
+    margin: 0 40px
 }
 .separate{
+    width: 30%;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
 }
-.adress{
-    max-width: 292px;
-    margin-right: 140px;
-}
+
 .social{
     display: flex;
     justify-content: space-between;
+    width: 30%;
 }
 
 .logo_startap{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10px;
 }
 .footer_tm{
     position: absolute;
@@ -1226,7 +1133,7 @@ h3 {
 
 }
 
-@media screen and (min-width: 370px) and (max-width:767px) {
+@media screen and (min-width: 370px) and (max-width:1024px) {
     .footer_part1,.startaps {
         display: none;
     }
@@ -1257,6 +1164,14 @@ h3 {
         margin-right: 0;
     }
 }
-
-
+@media screen and (max-width:1440px) {
+    .footer_part2 {     
+          
+        padding: 50px;
+           
+    }
+    .adress {     
+        margin: 0 20px
+    }    
+}
 
