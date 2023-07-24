@@ -541,6 +541,7 @@ button{
     font-weight: 800;
     font-size: 44px;
     line-height: 55px;
+    margin-bottom: 50px;
     color: black;
 }
 
@@ -556,6 +557,7 @@ button{
     line-height: 30px;
     font-size: 20px;
     color: black;
+    margin-bottom: 28px;
 }
 
 
@@ -1123,9 +1125,11 @@ h3 {
 
 .logo_startap{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;    
 }
+
 .footer_tm{
     position: absolute;
     top:-10px;
