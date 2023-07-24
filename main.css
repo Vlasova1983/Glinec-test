@@ -688,18 +688,16 @@ button{
 }
 
 .foto_list{   
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;    
     text-align: center;
-    justify-content:space-between;
+    justify-content:center;
     gap: 14px;
     padding: 0;   
 }
 
-
-
-.foto_item{
-    max-height:288px ;
+.foto_item{ 
+    flex-grow: 1;
+    max-height: 288px;
 }
 
 .arrow_left{
@@ -713,6 +711,7 @@ button{
     top: 130px;
     right: 55px;
 }
+
 .foto_img{
     width: 100%;
     height: 100%;
@@ -724,11 +723,6 @@ button{
     }
 }
 
-@media screen and (max-width:1440px) {
-    .foto_list {    
-        justify-content: center;            
-    }
-}
 
 /* --------section contribution------------ */
 .contribution {    
@@ -742,14 +736,15 @@ button{
     line-height: 55px;
 }
 
-.container_cart {
-    width: 100%;
-    height: 100%;
+.container_cart {   
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+.cart_link {
+    flex-grow: 1;
 }
 
 h3 {
@@ -875,11 +870,6 @@ h3 {
     }
 }
 
-@media screen and (max-width:1440px) {
-    .container_cart {
-        justify-content: center;
-    }
-}
 
 /* ------section worked------------ */
 
@@ -903,12 +893,14 @@ h3 {
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
+}
+.list_item{
+    flex-grow: 1;
 }
 
-
-
 .card {
+   
     background-color: white;   
     border: none;
     cursor: pointer;
@@ -938,11 +930,7 @@ h3 {
         justify-content: center;
     }
 }
-@media screen and (max-width:1440px) {
-    .worked_list {
-        justify-content: center;
-    }
-}
+
 /* --------section gratitude----------- */
 
 .gratitude {    
@@ -1168,7 +1156,7 @@ h3 {
     }
 }
 @media screen and (max-width:1440px) {
-    .footer_part2 {     
+    .footer_part2 {    
           
         padding: 50px;
            
